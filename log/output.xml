@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-04-03T15:13:10.474946" rpa="false" schemaversion="5">
+<suite id="s1" name="Testing001" source="C:\Users\CTAS131\PycharmProjects\Traveloka\Traveloka\Scenario 001\Testing001.robot">
+<test id="s1-t1" name="Test Start" line="16">
+<kw name="Open Edge Browser">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-03T15:13:10.725455" level="INFO">Opening browser 'Edge' to base url 'https://www.traveloka.com/en-id'.</msg>
+<arg>${URl}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-03T15:13:10.725455" elapsed="2.297833"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-04-03T15:13:13.024289" elapsed="0.150000"/>
+</kw>
+<status status="PASS" start="2024-04-03T15:13:10.724455" elapsed="2.449834"/>
+</kw>
+<kw name="Car">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-03T15:13:13.176291" level="INFO">Clicking element 'xpath=//*[@id="__next"]/div[4]/div[2]/div[1]/div[2]/div/div[1]/div/div/div[6]/div'.</msg>
+<arg>xpath=${CAR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-03T15:13:13.175290" elapsed="0.345005"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=${LOCATION}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-03T15:13:13.521290" elapsed="0.197001"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-03T15:13:13.719290" level="INFO">Clicking element 'xpath=//*[@id="__next"]/div[4]/div[2]/div[1]/div[2]/div/div[3]/div/div/div/div/div[2]/div/div[1]/div/div[1]/div[1]/div[1]/input'.</msg>
+<arg>xpath=${LOCATION}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-03T15:13:13.719290" elapsed="0.082000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-03T15:13:13.802290" level="INFO">Typing text 'jakarta' into text field 'xpath=//*[@id="__next"]/div[4]/div[2]/div[1]/div[2]/div/div[3]/div/div/div/div/div[2]/div/div[1]/div/div[1]/div[1]/div[1]/input'.</msg>
+<arg>xpath=${LOCATION}</arg>
+<arg>jakarta</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-03T15:13:13.801290" elapsed="0.137001"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-03T15:13:13.938291" level="INFO">Clicking element 'xpath=//*[@id="__next"]/div[4]/div[2]/div[1]/div[2]/div/div[3]/div/div/div/div/div[2]/div/div[1]/div/div[1]/div[2]/div/div[2]/div/div[1]/div[2]'.</msg>
+<arg>xpath=${SELECT_LOCT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-03T15:13:13.938291" elapsed="0.082002"/>
+</kw>
+<status status="PASS" start="2024-04-03T15:13:13.174289" elapsed="0.846004"/>
+</kw>
+<status status="PASS" start="2024-04-03T15:13:10.723454" elapsed="3.296839"/>
+</test>
+<status status="PASS" start="2024-04-03T15:13:10.477945" elapsed="3.543347"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Testing001">Testing001</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
