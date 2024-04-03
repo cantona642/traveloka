@@ -29,3 +29,4 @@ Car
     Click Element    xpath=${LOCATION}
     Input Text    xpath=${LOCATION}    jakarta
     Click Element    xpath=${SELECT_LOCT}
+    Click Element    ()
